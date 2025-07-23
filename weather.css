@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #020024;
+background: linear-gradient(74deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(139, 217, 205, 1) 67%, rgba(133, 213, 230, 1) 87%);
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;          /* automatically adjust height according to any screen */
+    display: flex;
+    justify-content: center;    /*put it at the centre of web page*/
+    align-items: center;  
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;     
+  }
+  /* .icon {
+    position: absolute;
+    top: 9.2cm;
+    left: 12.3cm;
+    fill: #fafafc79;
+    width: 60px;
+    height: 23px;
+    cursor: pointer;
+   } */
+
+  .container {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    color: #f9f7f7;
+    border-color: aliceblue;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px #00000088;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-color: #fbfbfb;
+}
+
+input {
+    margin-bottom: 8px;
+    padding: 10px 110px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: #353434;
+    cursor: pointer;
+  }
+
+input:focus {
+    outline: none;
+    border-color: #1abff7;
+    background-color: #1d1d1d;
+    color: #f7f5f5;
+    box-shadow: 0 0 10px #29d3e6;
+  }
+
+button {
+    position: relative;
+    padding: 10px;
+    background: #2a8eb9;
+    font-size: 17px;
+    font-weight: 500;
+    color: #f3f1f1;
+    border:  #2db6d8;
+    border-radius: 9px;
+    box-shadow: 0 0 0 #0a0501ca;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #2cdeaf);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background-color: #29d3e6;
+    color: #ecf0f0;
+    box-shadow: 0 0 2px #fff;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+  
+
+/* button:hover {
+    background-color: #65c1ec;
+    color: #fff;
+    border: 1px solid #1ab8f2;
+    padding: 7px;
+    box-shadow: 0 0 9px black;
+  } */
+
+  h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  ul {
+    background-color:  #313030;
+    color: #fff;
+    list-style-type: square;
+    padding: 5px 10px;
+    margin: 3px ;
+  }
+  
+    .weather-info {
+        color: #f7f5f5;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #error-message {
+      color: rgb(235, 41, 41);
+      font-size: medium;
+      margin-top: 20px;
+    }
